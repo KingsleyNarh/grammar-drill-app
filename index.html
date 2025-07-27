@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grammar Drill Game</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="welcomeScreen" class="screen">
+    <h1>Welcome to the Grammar Drill</h1>
+    <p>This drill uses spaced repetition to help you master grammar. Click "Start" to begin.</p>
+    <button onclick="startGame()">Start Drill</button>
+  </div>
+
+  <div id="drillContainer" class="hidden">
+    <div class="dialog-box" id="questionBox">Question appears here</div>
+    <input type="text" id="answerInput" placeholder="Type your answer here" />
+    <button onclick="submitAnswer()">Submit</button>
+  </div>
+
+  <div id="resultScreen" class="hidden">
+    <h2>Drill Complete!</h2>
+    <p id="feedbackText"></p>
+    <p id="badgeEarned"></p>
+    <button onclick="restartGame()">Restart Drill</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
